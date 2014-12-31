@@ -16,6 +16,10 @@ class Converter
 		String goAgain;
 		String converterChoice;
 		
+		int currencyFrom = 0;;
+		int currencyTo = 0;
+		int UnitFrom = 0;
+		int UnitTo = 0;
 		
 		do
 		{
@@ -24,8 +28,34 @@ class Converter
 		
 			if (converterChoice.equalsIgnoreCase("Currency"))
 				{
-				System.out.println("\nOkay, what currency would you like to convert from?");
+				System.out.println("\nOkay, what currency would you like to convert from? (1-4)");
 				System.out.println("1. Euro\n2. US Dollar\n3. Pound Sterling\n4. Canadian Dollar");
+				currencyFrom = sc.nextInt();
+				
+					switch (currencyFrom)
+					{
+						case 1: System.out.println("Euro");
+				
+
+						break;
+						
+						case 2: System.out.println("US Dollar");
+						
+						
+						break;
+						
+						case 3: System.out.println("Pound Sterling");
+						
+						
+						break;
+						
+						case 4: System.out.println("Canadian Dollar");
+						
+						
+						break;
+						
+						default: System.out.println("Invalid Input"); break;
+					}
 				
 				
 				}

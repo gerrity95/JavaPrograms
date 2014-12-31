@@ -6,6 +6,8 @@ Author: Mark Gerrity
 
 import java.util.Scanner;
 
+
+
 class Factorial
 {
 	public static void main(String [] args)
